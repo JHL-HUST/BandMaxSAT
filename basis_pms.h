@@ -72,21 +72,21 @@ class BandMaxSAT
   	int prioup_time;
   	double opt_time;
     
-    /**********BandMaxSAT information*****************/
-    int backward_step; // reward delay steps
-    double gamma; // reward discount factor
-    double lambda; // exploration bias parameter
-    int ArmNum; // number of sampled arms
-    int current_index;
-    int local_times;
-    long long pre_unsat_weight;
-    double max_clause_score;
-    int if_exceed;
-    int tabu_step;
-    double *clause_score;
-    int *selected_clauses;  
-    int *selected_times; 
-    int *sampled_clauses; 
+    	/**********BandMaxSAT information*****************/
+    	int backward_step; // reward delay steps
+    	double gamma; // reward discount factor
+    	double lambda; // exploration bias parameter
+    	int ArmNum; // number of sampled arms
+    	int current_index;
+    	int local_times;
+    	long long pre_unsat_weight;
+    	double max_clause_score;
+    	int if_exceed;
+    	int tabu_step;
+    	double *clause_score;
+    	int *selected_clauses;  
+   	int *selected_times; 
+    	int *sampled_clauses; 
     
   	/**********end non-algorithmic information*****************/
   	/* literal arrays */
@@ -163,14 +163,14 @@ class BandMaxSAT
   	int best_count;
   	int *temp_lit;
     
-    int *unassigned_hard_only_var;
-    int *index_in_unassigned_hard_only_var;
-    int unassigned_hard_only_var_num;
+    	int *unassigned_hard_only_var;
+    	int *index_in_unassigned_hard_only_var;
+    	int unassigned_hard_only_var_num;
     
-    int *hard_binary_clause;
-    int *soft_binary_clause;
-    int hard_binary_clause_count;
-    int soft_binary_clause_count;
+    	int *hard_binary_clause;
+    	int *soft_binary_clause;
+    	int hard_binary_clause_count;
+    	int soft_binary_clause_count;
     
   	//parameters used in algorithm
   	float rwprob;
@@ -187,7 +187,7 @@ class BandMaxSAT
   	void increase_weights();
   	void smooth_weights();
   	void update_clause_weights();
-    void update_clause_scores(long long s);
+    	void update_clause_scores(long long s);
   	void unsat(int clause);
   	void sat(int clause);
   	void init(vector<int> &init_solution);
@@ -195,7 +195,7 @@ class BandMaxSAT
   	void update_goodvarstack1(int flipvar);
   	void update_goodvarstack2(int flipvar);
   	int pick_var();
-    int pick_var2();
+    	int pick_var2();
   
     public:
   	BandMaxSAT();
@@ -203,7 +203,7 @@ class BandMaxSAT
   	void build_instance(char *filename);
   	void local_search(char *inputfile);
   	void local_search_with_decimation(char *inputfile);
-  	void simple_print(char *filename);
+  	void simple_print();
   	void print_best_solution();
   	void free_memory();
 };
