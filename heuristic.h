@@ -371,6 +371,8 @@ void BandMaxSAT::local_search_with_decimation(char *inputfile)
             flip(flipvar);
             time_stamp[flipvar] = step;
         }
+        if (get_runtime()>=cutoff_time)
+            return;
     }
 }
 
