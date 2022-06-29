@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
   
   	s.local_search_with_decimation(argv[1]);
   
-  	s.simple_print(argv[1]);
+  	s.simple_print();
   
   	s.free_memory();
   
