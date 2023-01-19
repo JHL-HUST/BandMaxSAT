@@ -1,7 +1,7 @@
 BandMaxSAT: A Local Search MaxSAT Solver with Multi-armed Bandit
 ----
 This repository contains the code to the BandMaxSAT algorithm for the MaxSAT proposed in our paper: <br> <br>
-[BandMaxSAT: A Local Search MaxSAT Solver with Multi-armed Bandit (IJCAI 2022)](https://arxiv.org/abs/2201.05544) <br>
+[BandMaxSAT: A Local Search MaxSAT Solver with Multi-armed Bandit (IJCAI 2022)](https://www.ijcai.org/proceedings/2022/264) <br>
 Jiongzhi Zheng, Kun He, Jianrong Zhou, Yan Jin, Chu-Min Li, Felip Manya <br> <br>
 
 Installation
